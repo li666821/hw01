@@ -13,7 +13,7 @@ def _is_valid_solution(solution: list[int], n: int) -> bool:
     解的形式为 [c0, c1, ...]，解[i] 为第 i 行皇后的列下标。
     """
     if len(solution) != n:
-        return False
+        return False 
     for i in range(n):
         if not (0 <= solution[i] < n):
             return False
