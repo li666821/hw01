@@ -18,7 +18,7 @@ def solve(n: int) -> List[List[int]]:
         所有解的列表。每个解是一个长度为 n 的列表，
         解[i] 表示第 i 行皇后所在的列索引（0 到 n-1）。
     """
-    if n <= 0:
+    if n <0:
         return []
 
     result: List[List[int]] = []
@@ -36,7 +36,7 @@ def solve(n: int) -> List[List[int]]:
             if row - r == col - c:
                 return False
             # 同一副对角线：行差 == -列差
-            if row - r == c - col:
+            if row - r == c  -  col:
                 return False
         return True
 
